@@ -345,6 +345,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.setupwizard.mode?=OPTIONAL
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.egl=POWERVR_ROGUE \
+
 
 # Enable Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
