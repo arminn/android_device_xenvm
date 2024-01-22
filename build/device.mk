@@ -164,20 +164,20 @@ endif
 
 
 # media codec config xml file
-PRODUCT_COPY_FILES += \
-    device/xen/xenvm/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    device/xen/xenvm/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+#PRODUCT_COPY_FILES += \
+#    device/xen/xenvm/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+#    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
+#    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+#    device/xen/xenvm/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # Software multimedia
-PRODUCT_PACKAGES += \
-    stagefright \
-    libsfplugin_ccodec \
-    libstagefright_bufferqueue_helper \
-    android.hardware.media.c2@1.0 \
-    libstagefright_bufferpool@2.0 \
-    android.hardware.media.omx@1.0-service \
+#PRODUCT_PACKAGES += \
+#    stagefright \
+#    libstagefrighthw \
+#    libsfplugin_ccodec \
+#    libstagefright_bufferqueue_helper \
+#    android.hardware.media.c2@1.0 \
+#    libstagefright_bufferpool@2.0 \
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
@@ -316,9 +316,9 @@ PRODUCT_COPY_FILES += \
     device/xen/xenvm/seccomp/mediaswcodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
 # C2 HAL
-#PRODUCT_PACKAGES += \
-#    android.hardware.media.c2@1.0-service.renesas \
-#    stagefright
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0-service.renesas \
+    stagefright
 
 # Wifi
 PRODUCT_PACKAGES += \
