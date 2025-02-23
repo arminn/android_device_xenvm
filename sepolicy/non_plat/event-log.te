@@ -1,0 +1,7 @@
+# These are example rules. Please make sure you are using rules for your
+# security requirements!
+
+#This is the rule for who try to access /dev/event-log-tags
+
+allow untrusted_app runtime_event_log_tags_file:file map;
+allow update_engine runtime_event_log_tags_file:file map;

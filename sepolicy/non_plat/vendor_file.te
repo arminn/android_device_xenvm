@@ -1,0 +1,10 @@
+# These are example rules. Please make sure you are using rules for your
+# security requirements!
+
+#allow bootanim vendor_file:file x_file_perms;
+#allow platform_app vendor_file:file rx_file_perms;
+#allow priv_app vendor_file:file rx_file_perms;
+#allow system_app vendor_file:file rx_file_perms;
+#allow surfaceflinger vendor_file:file rx_file_perms;
+#allow system_server vendor_file:file r_file_perms;
+#allow zygote vendor_file:file rx_file_perms;

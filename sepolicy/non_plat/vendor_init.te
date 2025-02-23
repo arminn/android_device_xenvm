@@ -1,0 +1,8 @@
+# These are example rules. Please make sure you are using rules for your
+# security requirements!
+
+# allow init to access /system/etc/selinux/plat_file_contexts
+allow vendor_init file_contexts_file:file map;
+
+allow vendor_init qemu_sf_lcd_density_prop:property_service set;
+allow vendor_init system_prop:property_service set;

@@ -1,0 +1,65 @@
+# These are example rules. Please make sure you are using rules for your
+# security requirements!
+
+#allow audioserver device:file { read write };
+#allow bootanim device:file { open read write };
+#allow bootstat device:file { read write };
+#allow cameraserver device:file { open read write };
+#allow dex2oat device:file { read write };
+#allow drmserver device:file { read write };
+#allow gatekeeperd device:file { read write };
+#allow healthd device:file { read write };
+#allow installd device:file { read write };
+#allow lmkd device:file { read write };
+#allow np_local_gps device:file { read write };
+#allow mdnsd device:file { read write };
+#allow mediacodec device:file { read write };
+#allow mediaextractor device:file { read write };
+#allow mediaserver device:file { read write };
+#allow netd device:file { read write };
+
+#allow sdcardd device:file { read write };
+#allow tombstoned device:file { read write };
+#allow tzdatacheck device:file { read write };
+#allow keystore device:file { read write };
+#allow logd device:file { read write };
+#allow mediadrmserver device:file { read write };
+#allow mediametrics device:file { read write };
+#allow zygote device:file { read write getattr open };
+#allow webview_zygote device:file { read write };
+#allow surfaceflinger device:file { read write };
+#allow system_app    device:dir { open read };
+#allow adbd device:file { read write open };
+#allow vold device:file { read write };
+
+# hal
+#allow hal_audio_default device:file { read write };
+#allow hal_camera_default device:file { read write };
+#allow hal_configstore_default device:file { read write };
+#allow hal_graphics_composer_default device:file { read write };
+#allow hal_keymaster_default device:file { read write };
+#allow hal_memtrack_default device:file { read write };
+#allow hal_thermal_default device:file { read write };
+#allow hal_bootctl_default device:file { read write }; 
+
+# service
+#allow vndservicemanager device:file { read write };
+#allow servicemanager device:file { read write };
+#allow hwservicemanager device:file { read write };
+
+
+
+# app
+#allow platform_app device:dir r_dir_perms;
+#allow priv_app device:file { open read write };
+#allow priv_app device:dir { read open };
+#allow platform_app  device:dir { open read };
+#allow untrusted_app device:dir { open read };
+
+# recovery
+#allow update_engine device:file { read write };
+#allow vendor_install_recovery device:file { read write ioctl getattr };
+#allow recovery_persist device:file { read write };
+#allow recovery_refresh device:file { read write };
+
+allow pvrsrvctl device:file { read write getattr };

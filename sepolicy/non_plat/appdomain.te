@@ -1,0 +1,6 @@
+# These are example rules. Please make sure you are using rules for your
+# security requirements!
+
+# enable pipe communication between appdomain processes and
+# surfaceflinger for gralloc subchannel feature (dynamic fbc)
+allow appdomain surfaceflinger:fifo_file rw_file_perms;
