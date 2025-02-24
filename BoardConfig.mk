@@ -42,6 +42,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a15
 TARGET_USES_64_BIT_BINDER := true
 TARGET_USES_MKE2FS := true
 TARGET_USES_HWC2 := true
+SF_START_GRAPHICS_ALLOCATOR_SERVICE := true
 
 BOARD_USES_UNCOMPRESSED_BOOT := false
 BOARD_USES_GENERIC_AUDIO := false
@@ -101,6 +102,7 @@ BOARD_SECCOMP_POLICY += device/xen/xenvm/seccomp
 
 # SELinux support
 BOARD_VENDOR_SEPOLICY_DIRS += device/xen/xenvm/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += device/xen/xenvm/sepolicy/non_plat
 BOARD_VENDOR_SEPOLICY_DIRS += device/xen/xenvm/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += device/xen/xenvm/sepolicy/public
 
