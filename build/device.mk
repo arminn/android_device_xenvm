@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0 \
     libstagefright_bufferpool@2.0 \
     com.android.media.swcodec-defaults \
+    com.android.media.swcodec \
 
 # media codec config xml file
 PRODUCT_COPY_FILES += \
@@ -409,6 +410,10 @@ PRODUCT_PACKAGES += \
    android.hardware.audio@6.0-impl \
    android.hardware.audio.effect@6.0-impl \
    android.hardware.audio.service \
+
+# Required for media APEX
+PRODUCT_PACKAGES += \
+    updatable-media
 
 # Updateble APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
